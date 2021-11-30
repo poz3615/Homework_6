@@ -34,6 +34,7 @@ stock_data_tbl <- tq_get(
         to   = today()
     ) %>%
     select(symbol, date, adjusted)
+    
 
 kable(stock_data_tbl,caption="Last 7 days of market close")
 ```
